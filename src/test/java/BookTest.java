@@ -8,12 +8,17 @@ public class BookTest {
 
     @Before
     public void setUp(){
-        book = new Book("Alice in Wonderland", "Lewic Carroll", "Fantasy");
+        book = new Book("Alice in Wonderland", "Lewis Carroll", "Fantasy");
     }
 
     @Test
     public void hasTitle(){
         assertEquals("Alice in Wonderland", book.getTitle());
+    }
+
+    @Test
+    public void hasGenre(){
+        assertEquals("Lewis Carroll", book.getAuthor());
     }
 
 
