@@ -17,8 +17,13 @@ public class BookTest {
     }
 
     @Test
-    public void hasGenre(){
+    public void hasAuthor(){
         assertEquals("Lewis Carroll", book.getAuthor());
+    }
+
+    @Test
+    public void hasGenre(){
+        assertEquals("Fantasy", book.getGenre());
     }
 
 
